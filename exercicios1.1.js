@@ -1,0 +1,1 @@
+document.getElementById("paragrafo").innerText = "Daqui a dois anos eu pretendo estar ja estabilizado em uma boa empresa , com uma estabilidade, morando no Brasil novamente e com uma realizacao profissional ";
