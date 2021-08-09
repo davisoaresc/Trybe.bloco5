@@ -3,4 +3,5 @@ document.getElementById("paragrafo").style.textTransform = "uppercase"
 document.getElementsByClassName("main-content")[0].style.backgroundColor = "green";
 document.getElementsByClassName("center-content")[0].style.backgroundColor = "white"
 document.getElementsByClassName("title")[0].innerText = "Java Script"
+console.log(document.getElementsByTagName("p"));
 
