@@ -74,8 +74,21 @@
       paragrafoOne.innerText = "A trybe vai nos capacitar a desenvolver os melhores codigos do mundo!! "
       sectionOne.appendChild(paragrafoOne);
 
+      let sectionTwo = document.createElement('section');
+      sectionTwo.className = "left-content";
+      mainOne.appendChild(sectionTwo)
       
-      
+      let sectionThree = document.createElement('section');
+      sectionThree.className = "right-content";
+      mainOne.appendChild(sectionThree);
+
+      let imagemEsquerda = new Image();
+      imagemEsquerda.className = "small-image";
+      imagemEsquerda.src = "https://picsum.photos/200";
+      imagemEsquerda.onload = function() {
+          sectionTwo.appendChild(imagemEsquerda)
+      }
+
     </script>
   </body>
 </html>
