@@ -89,6 +89,41 @@
           sectionTwo.appendChild(imagemEsquerda)
       }
 
+      let listaUl = document.createElement("ul");
+      sectionThree.appendChild(listaUl)
+      let listaDeNumeros = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      
+        for (let numeros in listaDeNumeros){
+            let elementoDaLista = document.createElement("li");
+            elementoDaLista.innerHTML = listaDeNumeros[numeros];
+            listaUl.appendChild(elementoDaLista);
+        }
+
+      let primeiroH3 = document.createElement("h3")
+      mainOne.appendChild(primeiroH3)   
+
+      let segundoH3 = document.createElement("h3")
+      mainOne.appendChild(segundoH3)  
+
+      let terceiroH3 = document.createElement("h3")
+      mainOne.appendChild(terceiroH3)  
+
+      textH1.className = "title"
+
+      primeiroH3.className = "description"
+      segundoH3.className = "description"
+      terceiroH3.className = "description"
+
+      let removeSectionTwo = document.getElementsByClassName("left-content")[0];
+      mainOne.removeChild(removeSectionTwo)
+
+      let centralizaSectionThree = document.getElementsByClassName("right-content")[0];
+      centralizaSectionThree.style.marginRight = "auto"
+
+      listaUl.lastChild.remove()
+      listaUl.lastChild.remove()
+
     </script>
   </body>
 </html>
